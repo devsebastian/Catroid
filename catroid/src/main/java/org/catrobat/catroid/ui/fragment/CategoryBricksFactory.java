@@ -84,6 +84,7 @@ import org.catrobat.catroid.content.bricks.DroneTurnLeftBrick;
 import org.catrobat.catroid.content.bricks.DroneTurnRightBrick;
 import org.catrobat.catroid.content.bricks.EditLookBrick;
 import org.catrobat.catroid.content.bricks.ExitStageBrick;
+import org.catrobat.catroid.content.bricks.FadeParticleEffectBrick;
 import org.catrobat.catroid.content.bricks.FinishStageBrick;
 import org.catrobat.catroid.content.bricks.FlashBrick;
 import org.catrobat.catroid.content.bricks.ForItemInUserListBrick;
@@ -483,6 +484,8 @@ public class CategoryBricksFactory {
 			motionBrickList.add(new PhiroMotorStopBrick(PhiroMotorStopBrick.Motor.MOTOR_BOTH));
 		}
 
+		motionBrickList.add(new FadeParticleEffectBrick());
+
 		return motionBrickList;
 	}
 
@@ -553,6 +556,7 @@ public class CategoryBricksFactory {
 		looksBrickList.add(new ChangeBrightnessByNBrick(BrickValues.CHANGE_BRITHNESS_BY));
 		looksBrickList.add(new SetColorBrick(BrickValues.SET_COLOR_TO));
 		looksBrickList.add(new ChangeColorByNBrick(BrickValues.CHANGE_COLOR_BY));
+		looksBrickList.add(new FadeParticleEffectBrick());
 		looksBrickList.add(new ClearGraphicEffectBrick());
 		looksBrickList.add(new WhenBackgroundChangesBrick());
 		looksBrickList.add(new SetBackgroundBrick());
@@ -585,6 +589,7 @@ public class CategoryBricksFactory {
 		looksBrickList.add(new DeleteLookBrick());
 
 		looksBrickList.add(new OpenUrlBrick(BrickValues.OPEN_IN_BROWSER));
+
 		return looksBrickList;
 	}
 

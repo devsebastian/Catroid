@@ -512,6 +512,8 @@ public class RtlBrickTest {
 		checkIfBrickISRtl(EditLookBrick.class, R.id.brick_edit_look_layout);
 
 		checkIfBrickISRtl(FadeParticleEffectBrick.class, R.id.brick_fade_particle_effect_layout);
+
+		checkIfBrickISRtl(FadeParticleEffectBrick.class, R.id.brick_additive_particle_effect_layout);
 	}
 
 	@Category({Cat.AppUi.class, Level.Smoke.class, Cat.RTLTests.class})

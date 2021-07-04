@@ -127,6 +127,7 @@ import org.catrobat.catroid.content.bricks.OpenUrlBrick;
 import org.catrobat.catroid.content.bricks.PaintNewLookBrick;
 import org.catrobat.catroid.content.bricks.ParameterizedBrick;
 import org.catrobat.catroid.content.bricks.ParameterizedEndBrick;
+import org.catrobat.catroid.content.bricks.ParticleEffectAdditivityBrick;
 import org.catrobat.catroid.content.bricks.PauseForBeatsBrick;
 import org.catrobat.catroid.content.bricks.PenDownBrick;
 import org.catrobat.catroid.content.bricks.PenUpBrick;
@@ -557,6 +558,7 @@ public class CategoryBricksFactory {
 		looksBrickList.add(new SetColorBrick(BrickValues.SET_COLOR_TO));
 		looksBrickList.add(new ChangeColorByNBrick(BrickValues.CHANGE_COLOR_BY));
 		looksBrickList.add(new FadeParticleEffectBrick());
+		looksBrickList.add(new ParticleEffectAdditivityBrick());
 		looksBrickList.add(new ClearGraphicEffectBrick());
 		looksBrickList.add(new WhenBackgroundChangesBrick());
 		looksBrickList.add(new SetBackgroundBrick());
